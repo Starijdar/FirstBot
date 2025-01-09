@@ -8,11 +8,13 @@ dp = Dispatcher(bot, storage=MemoryStorage())
 
 @dp.message_handler(commands=['start'])
 async def start_messages(message):
-    print(f'Привет! Я бот помогающий твоему здоровью.')
+    print(f'Wasup?')
+    await message.answer('Привет! Я бот помогающий твоему здоровью.')
 
 @dp.message_handler()
 async def all_messages(message):
-    print(f'Введите команду /start, чтобы начать общение.')
+    print(f'Другое сообщение')
+    await message.answer(f"Введите команду /start, чтобы начать общение")
 
 
 if __name__ == "__main__":
