@@ -40,18 +40,23 @@ async def set_age(message):
 
 @dp.message_handler(state=UserState.Age)
 async def set_height(message, state):
-    try:
-        if not isinstance(message, int):
-            raise ValueError
-        await message.answer('Введите свой рост')
-        await UserState.Growth.set()
-    except ValueError:
+
+    if not message.text.isdigit():
+        print(message.content_type)
         await message.answer('цыферы тут нада')
-        await state.finish()
+        return
+    await state.update_data(age=message.text)
+    await message.answer('Введите свой рост')
+    await UserState.Growth.set()
+
 
 
 @dp.message_handler(state=UserState.Growth)
 async def set_weight(message, state):
+    if not message.text.isdigit():
+        print(message.content_type)
+        await message.answer('цыферы тут нада')
+        return
     await state.update_data(height=message.text)
     await message.answer('Введите свой вес')
     await UserState.Weight.set()
