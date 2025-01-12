@@ -3,6 +3,7 @@ from aiogram.contrib.fsm_storage.memory import MemoryStorage
 from aiogram.dispatcher.filters.state import State, StatesGroup
 from aiogram.dispatcher import FSMContext
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 import asyncio
 
 
@@ -16,6 +17,13 @@ button2 = KeyboardButton(text='Расчитать')
 kb.add(button1)
 kb.insert(button2)
 
+ikb = InlineKeyboardMarkup(inline_keyboard=[[ InlineKeyboardButton(text='Расчитать', callback_data='calories') ],
+                           [
+                               InlineKeyboardButton(text='Информация', callback_data='info'),
+                           InlineKeyboardButton(text='Формула', callback_data='formula')
+                           ]
+                        ])
+
 
 class UserState(StatesGroup):
     Age = State()
@@ -26,16 +34,22 @@ class UserState(StatesGroup):
 @dp.message_handler(commands=['start'])
 async def start_messages(message):
     print(f'Wasup?', message)
-    await message.answer('Привет! Я бот помогающий твоему здоровью.', reply_markup = kb)
+    await message.answer('Привет! Я бот помогающий твоему здоровью.', reply_markup = ikb)
 
-@dp.message_handler(text=['Информация'])
+@dp.message_handler(text=['Информация', 'info'])
 async def infooo(message):
     await message.answer('Информация о боте')
 
+@dp.callback_query_handler(text='info')
+async def infooo1(call):
+    await call.message.answer('Информация о боте')
+    await call.answer()
 
-@dp.message_handler(text=['Calories', 'calories', 'калории', 'Калории', 'Расчитать'])
-async def set_age(message):
-    await message.answer('Введите свой возраст')
+
+@dp.callback_query_handler(text='calories')
+async def set_age(call):
+    await call.message.answer('Введите свой возраст')
+    await call.answer()
     await UserState.Age.set()
 
 @dp.message_handler(state=UserState.Age)
@@ -50,7 +64,6 @@ async def set_height(message, state):
     await UserState.Growth.set()
 
 
-
 @dp.message_handler(state=UserState.Growth)
 async def set_weight(message, state):
     if not message.text.isdigit():
@@ -60,6 +73,7 @@ async def set_weight(message, state):
     await state.update_data(height=message.text)
     await message.answer('Введите свой вес')
     await UserState.Weight.set()
+
 
 @dp.message_handler(state=UserState.Weight)
 async def send_calories(message, state):
@@ -71,6 +85,12 @@ async def send_calories(message, state):
         await message.answer('Всё не то емаё')
     finally:
         await state.finish()
+
+
+@dp.callback_query_handler(text='formula')
+async def bringf(message):
+    await message.message.answer(f'10 x вес (кг) + 6,25 x рост (см) – 5 x возраст (г) – 161')
+    await message.answer()
 
 if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
