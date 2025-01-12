@@ -4,14 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="717c9003-54de-49e6-9914-e8930499997e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/TGBot.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="717c9003-54de-49e6-9914-e8930499997e" name="Changes" comment="by">
+      <change afterPath="$PROJECT_DIR$/NotTg14/Module14_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopBot/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopBot/database.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopBot/db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopBot/keyboards.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopBot/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ShopBot/texts.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +29,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Starijdar&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Starijdar/FirstBot.git&quot;,
+    &quot;accountId&quot;: &quot;b6b127e2-c65b-4828-8474-af12f5b5b2dd&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -40,11 +53,21 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.13_4.executor": "Run",
+    "Python.13_5.executor": "Run",
+    "Python.13_6.executor": "Run",
+    "Python.Module14_1.executor": "Run",
+    "Python.db.executor": "Run",
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Py\TGBot" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -61,6 +84,88 @@
       <option name="presentableId" value="Default" />
       <updated>1736262452069</updated>
     </task>
+    <task id="LOCAL-00001" summary="by">
+      <option name="closed" value="true" />
+      <created>1736443061969</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1736443061969</updated>
+    </task>
+    <task id="LOCAL-00002" summary="by">
+      <option name="closed" value="true" />
+      <created>1736443914926</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1736443914926</updated>
+    </task>
+    <task id="LOCAL-00003" summary="by">
+      <option name="closed" value="true" />
+      <created>1736443982222</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1736443982222</updated>
+    </task>
+    <task id="LOCAL-00004" summary="by">
+      <option name="closed" value="true" />
+      <created>1736446755391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1736446755391</updated>
+    </task>
+    <task id="LOCAL-00005" summary="by">
+      <option name="closed" value="true" />
+      <created>1736450054916</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1736450054916</updated>
+    </task>
+    <task id="LOCAL-00006" summary="by">
+      <option name="closed" value="true" />
+      <created>1736450069019</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736450069019</updated>
+    </task>
+    <task id="LOCAL-00007" summary="by">
+      <option name="closed" value="true" />
+      <created>1736451244857</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1736451244857</updated>
+    </task>
+    <task id="LOCAL-00008" summary="by">
+      <option name="closed" value="true" />
+      <created>1736681165018</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1736681165018</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.db" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="by" />
+    <option name="LAST_COMMIT_MESSAGE" value="by" />
   </component>
 </project>
