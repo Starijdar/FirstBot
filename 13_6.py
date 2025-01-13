@@ -33,7 +33,6 @@ class UserState(StatesGroup):
 
 @dp.message_handler(commands=['start'])
 async def start_messages(message):
-    print(f'Wasup?', message)
     await message.answer('Привет! Я бот помогающий твоему здоровью.', reply_markup = ikb)
 
 @dp.message_handler(text=['Информация', 'info'])
