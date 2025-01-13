@@ -18,7 +18,6 @@ class UserState(StatesGroup):
 
 @dp.message_handler(commands=['start'])
 async def start_messages(message):
-    print(f'Wasup?')
     await message.answer('Привет! Я бот помогающий твоему здоровью.')
 
 @dp.message_handler(text=['Calories', 'calories', 'калории', 'Калории'])
