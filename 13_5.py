@@ -25,7 +25,6 @@ class UserState(StatesGroup):
 
 @dp.message_handler(commands=['start'])
 async def start_messages(message):
-    print(f'Wasup?', message)
     await message.answer('Привет! Я бот помогающий твоему здоровью.', reply_markup = kb)
 
 @dp.message_handler(text=['Информация'])
@@ -55,7 +54,7 @@ async def set_height(message, state):
 async def set_weight(message, state):
     if not message.text.isdigit():
         print(message.content_type)
-        await message.answer('цыферы тут нада')
+        await message.answer('цыферы должны быть')
         return
     await state.update_data(height=message.text)
     await message.answer('Введите свой вес')
