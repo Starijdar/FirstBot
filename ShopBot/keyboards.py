@@ -6,7 +6,8 @@ start_kb = ReplyKeyboardMarkup(
         [
             KeyboardButton(text='О нас'),
             KeyboardButton(text='Стоимость')
-        ]
+        ],
+        [KeyboardButton(text="Нажми для котика")]
     ], resize_keyboard=True
 )
 
@@ -21,6 +22,7 @@ catalog_kb = InlineKeyboardMarkup(
 
 buy_kb = InlineKeyboardMarkup(
     inline_keyboard=[
-        [InlineKeyboardButton(text='Купить', url='http://ya.ru')]
+        [InlineKeyboardButton(text='Купить', url='http://ya.ru')],
+        [InlineKeyboardButton(text='Back', callback_data='back')]
     ]
 )

@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="717c9003-54de-49e6-9914-e8930499997e" name="Changes" comment="by">
-      <change afterPath="$PROJECT_DIR$/NotTg14/Module14_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopBot/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopBot/database.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopBot/db.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopBot/keyboards.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopBot/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopBot/texts.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/NotTg14/Module14_3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopBot/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShopBot/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopBot/keyboards.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShopBot/keyboards.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopBot/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShopBot/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ShopBot/texts.py" beforeDir="false" afterPath="$PROJECT_DIR$/ShopBot/texts.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,22 +49,54 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.13_4.executor": "Run",
-    "Python.13_5.executor": "Run",
-    "Python.13_6.executor": "Run",
-    "Python.Module14_1.executor": "Run",
-    "Python.db.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.13_4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.13_5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.13_6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Module14_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Module14_3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.db.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Py\TGBot\ShopBot" />
       <recent name="F:\Py\TGBot" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Module14_3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TGBot" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NotTg14" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NotTg14/Module14_3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Module14_3" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -148,7 +178,23 @@
       <option name="project" value="LOCAL" />
       <updated>1736681165018</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="by">
+      <option name="closed" value="true" />
+      <created>1736692175359</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1736692175359</updated>
+    </task>
+    <task id="LOCAL-00010" summary="by">
+      <option name="closed" value="true" />
+      <created>1736968187320</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1736968187320</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -162,6 +208,17 @@
         <option value="Default.Date" />
         <option value="Default.Subject" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
